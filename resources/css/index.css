@@ -1,0 +1,109 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.nav-link {
+    color: rgb(49, 49, 49); 
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.subheader-font {
+    
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.container{text-align: center;}
+.main-container {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.front-display {
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.front-image {
+    z-index:1000;
+    width: 300px;
+}
+
+.front-object {
+    width:200px;
+    padding:9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index:1;
+    border:1px solid rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
+}
+
+.front-container:hover {
+    scale: 1.2;
+    transition: 0.2s;
+    z-index:999
+}
+.front-container:not(hover) {
+    transition:0.2s;
+}
+
+
+
+.cupcake-text {scale: 1.8; translate:0% 500%; text-align: center; color: rgb(20, 20, 53); font-size: 50px; font-family: "Calibri" "Geneva"; white-space: nowrap; font-weight: bold;}
+.cupcake-centre {display: flex; translate: 80px;}
+.cupcake-container {
+    
+    height: 550px;
+    width: 2000px;
+    display: flex;
+    margin: auto;
+}
+
+.cupcake-shadow1 {scale:3; background-color: rgb(252, 148, 12); rotate: 12deg; transition: 0.5s; position: relative; scale: 0.5; animation-name: blur1; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object1 {rotate: 12deg; transition: 0.5s; position: relative; scale: 0.5; animation-name: float1; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object1:hover {
+    transform: rotate(5deg);
+    scale: 0.6;
+}
+
+.cupcake-shadow2 {scale:3; background-color: rgb(252, 148, 12); rotate: 12deg; transition: 0.5s; position: relative; scale: 0.5; animation-name: blur2; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object2{rotate: -8deg;transition: 0.5s; position: relative; scale: 0.3; animation-name: float2; animation-duration: 3.5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object2:hover {
+    transform: rotate(-5deg);
+    scale: 0.4;
+}
+
+.cupcake-shadow3 {scale:3; background-color: rgb(252, 148, 12); rotate: 12deg; transition: 0.5s; position: relative; scale: 0.5; animation-name: blur3; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object3{rotate: -34deg;transition: 0.5s; position: relative; scale: 0.3; animation-name: float3; animation-duration: 2s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object3:hover {
+    transform: rotate(5deg);
+    scale: 0.5;
+}
+
+.cupcake-shadow4 {scale:3; background-color: rgb(252, 148, 12); rotate: 12deg; transition: 0.5s; position: relative; scale: 0.5; animation-name: blur4; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object4{rotate: 27deg;transition: 0.5s; position: relative; scale: 0.3; animation-name: float4; animation-duration: 2.5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.cupcake-object4:hover {
+    transform: rotate(-10deg);
+    scale: 0.5;
+}
+
+
+@keyframes float1 {0%{translate: 220% 35%;}50%{translate: 220% 30%;}100%{translate: 220% 35%;}}
+@keyframes float2 {0%{translate: 70% -30%;}50%{translate: 70% -20%;}100%{translate: 70% -30%;}}
+@keyframes float3 {0%{translate: -110% 10%;}50%{translate: -110% 5%;}100%{translate: -110% 10%;}}
+@keyframes float4 {0%{translate: -50% 5%;}50%{translate: -50% -5%;}100%{translate: -50% 5%;}}
+@keyframes blur1 {0%{translate: 220% 35%;}50%{translate: 220% 30%;}100%{translate: 220% 35%;}}
+@keyframes blur2 {0%{translate: 70% -30%;}50%{translate: 70% -20%;}100%{translate: 70% -30%;}}
+@keyframes blur3 {0%{translate: -110% 10%;}50%{translate: -110% 5%;}100%{translate: -110% 10%;}}
+@keyframes blur4 {0%{translate: -50% 5%;}50%{translate: -50% -5%;}100%{translate: -50% 5%;}}
